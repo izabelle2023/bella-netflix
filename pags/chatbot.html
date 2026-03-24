@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Configurações básicas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TelaMax</title>
+
+    <!-- Estilos do chatbot -->
+    <link rel="stylesheet" href="../css/chatbot.css" />
+
+    <!-- Ícone da aba -->
+    <link rel="shortcut icon" href="../img/logo.png" />
+  </head>
+
+  <body>
+    <!-- Container principal do chatbot -->
+    <div class="chatbot-widget" id="chatbot-widget">
+
+      <!-- Botão flutuante para abrir/fechar o chat -->
+      <button id="chatbot-toggle" class="chatbot-toggle">
+        <img src="../img/balao.png" alt="Abrir chat" />
+      </button>
+
+      <!-- Janela do chatbot -->
+      <div class="chatbot-window">
+
+        <!-- Cabeçalho com informações do bot -->
+        <header class="chatbot-header">
+          <div class="chatbot-header-info">
+            
+            <!-- Avatar do bot -->
+            <div class="chatbot-avatar">P</div>
+
+            <!-- Nome e descrição -->
+            <div>
+              <div class="chatbot-title">PedrIA</div>
+              <div class="chatbot-subtitle">
+                Assistente de Sistema de Vídeos
+              </div>
+            </div>
+          </div>
+
+          <!-- Botão de fechar -->
+          <button class="chatbot-close" id="chatbot-close">
+            <img src="../img/excluir.png" alt="Fechar" />
+          </button>
+        </header>
+
+        <!-- Área onde as mensagens serão inseridas via JS -->
+        <div class="chatbot-messages" id="chatbot-messages"></div>
+
+        <!-- Formulário de envio de mensagens -->
+        <form class="chatbot-form" id="chatbot-form">
+          <input
+            type="text"
+            id="chatbot-input"
+            class="chatbot-input"
+            placeholder="Digite sua pergunta..."
+            autocomplete="off"
+            required
+          />
+
+          <!-- Botão de enviar -->
+          <button class="chatbot-send-btn" type="submit">
+            <img src="../img/joystick.png" alt="Enviar" />
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Script responsável pela lógica do chatbot -->
+    <script src="../js/chatbot.js"></script>
+  </body>
+</html>
