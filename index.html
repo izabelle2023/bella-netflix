@@ -1,62 +1,90 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bella+</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="icon" href="../img/logo.png"/>
-  </head>
 
-  <body>
-    <header class="navbar">
-      <div class="logo">
-        <img src="img/logo.png" alt="Bella+" />
-      </div>
-      <nav>
-        <a href="#" class="active">Início</a>
-        <a href="#">Filmes</a>
-        <a href="#">Séries</a>
-        <a href="#">Minha Lista</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <main>
-      <section class="banner">
-        <div class="banner-overlay">
-          <div class="banner-content">
-            <h1 class="banner-title">Nome do Filme</h1>
-            <p class="banner-description">A descrição impactante do filme principal aparece aqui, engajando o usuário logo de cara.</p>
-            <div class="banner-buttons">
-              <button class="btn-play" onclick="playBanner()">▶ Assistir</button>
-              <button class="btn-info">ⓘ Mais informações</button>
-            </div>
-          </div>
-        </div>
-      </section>
+  <title>Bella+</title>
 
-      <div class="content-lists">
-        <section class="row">
-          <h2 class="row-title">Populares na Bella+</h2>
-          <div class="movies-container" id="populares">
-            </div>
-        </section>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="img/logo.png" />
+</head>
 
-        <section class="row">
-          <h2 class="row-title">Lançamentos</h2>
-          <div class="movies-container" id="lancamentos">
-            </div>
-        </section>
-      </div>
-    </main>
+<body>
 
-    <div class="player" id="player">
-      <span class="close" onclick="closePlayer()">✖</span>
-      <video id="video" controls></video>
+  <header class="header">
+
+    <div class="logo">
+      <img src="img/logo.png" alt="Bella+" />
     </div>
 
-    <script type="module" src="./firebase.js"></script>
-    <script src="js/index.js"></script>
-  </body>
+    <div class="menu">
+
+      <select>
+        <option>Português</option>
+        <option>English</option>
+      </select>
+
+      <button class="btn-entrar">Entrar</button>
+
+    </div>
+
+  </header>
+
+
+  <section class="banner">
+
+    <div class="banner-content">
+
+      <h1>
+        Filmes, séries e tecnologia em um só lugar
+      </h1>
+
+      <p>
+        Assista conteúdos exclusivos da Bella+ quando quiser.
+      </p>
+
+      <div class="botoes">
+
+        <button class="btn-vermelho">
+          Começar agora
+        </button>
+
+        <button class="btn-vermelho2">
+          Saiba mais
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="tecnologia">
+
+    <h2>Tecnologia</h2>
+
+  </section>
+
+
+  <section class="sobre">
+
+    <h2>O que é a Bella+</h2>
+
+    <p>
+      A Bella+ é uma plataforma de streaming focada em filmes, séries e
+      tecnologia. Nosso objetivo é conectar entretenimento e inovação em uma
+      experiência moderna e acessível para todos.
+    </p>
+
+  </section>
+
+
+  <footer>
+    © 2026 BELLA+ - DESENVOLVIDO POR <b>IZABELLE SILVA</b>
+  </footer>
+
+</body>
 </html>
