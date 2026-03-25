@@ -1,146 +1,147 @@
-:root {
-  --background: #141414;
-  --netflix-red: #E50914;
-  --text: #ffffff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--background);
-  color: var(--text);
-  font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
-}
-
-/* Navbar Transparente com Gradiente */
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding: 20px 4%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 10%, transparent);
-  z-index: 1000;
-  transition: background 0.5s;
-}
-
-.logo img {
-  height: 30px;
-  margin-right: 25px;
-}
-
-nav a {
-  color: #e5e5e5;
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 0.85rem;
-  transition: 0.3s;
-}
-
-nav a:hover {
-  color: #b3b3b3;
-}
-
-/* Banner Principal */
-.banner {
-  height: 85vh;
-  background-size: cover;
-  background-position: center center;
-  background-image: linear-gradient(to top, #141414 5%, transparent 50%),
-    linear-gradient(to right, rgba(0, 0, 0, 0.9) 10%, transparent 60%),
-    url('../img/fundo.png');
-}
-
-.banner-overlay {
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent);
-  display: flex;
-  align-items: center;
-  padding: 0 4%;
-}
-
-.banner-content {
-  max-width: 500px;
-}
-
-.banner-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.banner-description {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Botões Estilo Netflix */
-button {
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 25px;
-  font-weight: bold;
-  font-size: 1rem;
-  margin-right: 10px;
-}
-
-.btn-play {
-  background-color: white;
-  color: black;
-}
-
-.btn-play:hover {
-  background-color: rgba(255, 255, 255, 0.7);
-}
-
-.btn-info {
-  background-color: rgba(109, 109, 110, 0.7);
+  background: black;
   color: white;
 }
 
-/* Trilhos de Filmes (The Rows) */
-.content-lists {
-  margin-top: -150px;
-  position: relative;
-  z-index: 10;
-}
+/* HEADER */
 
-.row {
-  margin-bottom: 30px;
-  padding-left: 4%;
-}
-
-.row-title {
-  font-size: 1.4rem;
-  margin-bottom: 10px;
-}
-
-.movies-container {
+.header {
   display: flex;
-  overflow-x: auto;
-  gap: 10px;
-  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: black;
 }
 
-/* Esconder barra de rolagem */
-.movies-container::-webkit-scrollbar {
-  display: none;
+.logo img {
+  height: 100px;
 }
 
-.movie-card {
-  min-width: 200px;
-  height: 110px;
-  background-color: #333;
+/* MENU */
+
+.menu {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.menu select {
+  background: black;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
   border-radius: 4px;
-  transition: transform 0.3s ease;
-  cursor: pointer;
-  object-fit: cover;
 }
 
-.movie-card:hover {
-  transform: scale(1.1);
-  z-index: 5;
+/* BOTÃO ENTRAR */
+
+.btn-entrar {
+  background: transparent;
+  border: 1px solid #e50914;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-entrar:hover {
+  background: #e50914;
+}
+
+/* BANNER */
+
+.banner {
+  height: 80vh;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("../img/cinema.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 80px;
+}
+
+.banner-content {
+  max-width: 600px;
+}
+
+.banner h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* BOTÕES */
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-vermelho,
+.btn-vermelho2 {
+  background: #e50914;
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-vermelho:hover,
+.btn-vermelho2:hover {
+  background: #ff2d2d;
+}
+
+/* TECNOLOGIA */
+
+.tecnologia {
+  background: #111;
+  padding: 60px 80px;
+  font-size: 30px;
+}
+
+/* SOBRE */
+
+.sobre {
+  text-align: center;
+  padding: 100px 200px;
+}
+
+.sobre h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.sobre p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #e50914;
+  font-size: 18px;
 }
